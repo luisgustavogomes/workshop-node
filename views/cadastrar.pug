@@ -1,0 +1,9 @@
+extend layout
+
+block content
+    h1 Cadastrar desenvolvedores
+    hr
+    form(method='POST' action='/desenvolvedores')
+        input(placeholder='Nome' type='text' name='nome')
+        input(placeholder='Email' type='text' name='email')
+        input.btn.btn-success(type='submit' value='Enviar')
